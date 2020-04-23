@@ -76,7 +76,9 @@
                <form class="form-inline" style="position: relative;">
                   <input style="border-radius: 30px;" class="form-control form-control-sm mr-2" type="text"
                      placeholder="Search" aria-label="Search">
-                  <button type="button" class="btn btn-info waves-effect btn-sm mr-0">SIGNUP</button>
+                     <a href="signup.html">
+                        <button type="button" class="btn btn-info waves-effect btn-sm mr-0">SIGNUP</button>
+                     </a>
                </form>
             </div>
             <!-- Collapsible content -->
@@ -93,14 +95,17 @@
                <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                     <li class="breadcrumb-item active" aria-current="page">Heath News</li>
-                     <li class="breadcrumb-item active" aria-current="page">New healthcare center open</li>
+                     <li class="breadcrumb-item active" aria-current="page">
+                        <a href="health.html">Heath News</a>
+                     </li>
+                     <li class="breadcrumb-item active" aria-current="page">200 Gram of Japaneses Su Shi gives double energy than coffee</li>
                   </ol>
                </nav>
                <!-- header -->
 
                <div class="content-header p-3 pt-0">
-                  <h2 style="font-size: 1.5rem;">Thailand had the best weather in the last hundred years </h2>
+                  <h2 style="font-size: 1.5rem;">
+                     200 Gram of Japaneses Su Shi gives double energy than coffee </h2>
                   <div class="content-meta">
                      <span class="meta-time">
                         <i class="far fa-clock"></i> Apr 17, 2020
@@ -124,7 +129,7 @@
                      </p>
                   </div>
                   <div class="content-img">
-                     <img width="100%" src="../img/heath6.jpg" alt="">
+                     <img width="100%" src="../img/heath1.jpg" alt="heath1">
                   </div>
                   <div class="content-title pt-3 ">
                      <p class="mb-0">ow that the orgy of insufferable hipsterism known as Coachella is finally behind
@@ -173,9 +178,8 @@
                                     <div class="row pt-3">
                                        <div class="col-lg-12">
                                           <a class="most-item img-hover-zoom">
-                                             <img src="../img/world1.jpg" alt="">
-                                             <p class="most-title">Thailand had the best weather in the last hundred
-                                                years</p>
+                                             <img src="../img/heath2.jpg" alt="heath2">
+                                             <p class="most-title">University research: meat is not bad for health as many people say</p>
                                           </a>
                                        </div>
                                        <div class="col-lg-12">
@@ -187,9 +191,8 @@
                                        </div>
                                        <div class="col-lg-12">
                                           <a class="most-item img-hover-zoom">
-                                             <img src="../img/world5.jpg" alt="">
-                                             <p class="most-title">Two boys play with water after a rainy day in New
-                                                York city</p>
+                                             <img src="../img/sport1.jpg" alt="sport2">
+                                             <p class="most-title">What should you take in your bag before going to hiking</p>
                                           </a>
                                        </div>
                                     </div>
@@ -205,9 +208,8 @@
                                        </div>
                                        <div class="col-lg-12">
                                           <a class="most-item img-hover-zoom">
-                                             <img src="../img/tech4.jpg" alt="">
-                                             <p class="most-title">Canada airlines will travel for the longest trip in
-                                                the history of flight</p>
+                                             <img src="../img/camera.jpg" alt="camera">
+                                             <p class="most-title">Old cameras can capture images better than nowdays camera</p>
                                           </a>
                                        </div>
                                        <div class="col-lg-12">
@@ -224,7 +226,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="comment">
+                  <!-- <div class="comment">
                      <div class="pf-img">
                         <img src="../img/3d.jpg" width="50px" height="50px" style="border-radius: 50%;" alt="">
                      </div>
@@ -237,6 +239,46 @@
                      <div class="btn-post" style="align-self: flex-end;padding-bottom: 10px;">
                         <button type="button" class="btn btn-fb btn-sm bg-fb mt-0">Post</button>
                      </div>
+                  </div> -->
+
+                  <div class="contact">
+                     <!-- Default form contact -->
+                     <form class="text-center border border-light p-3" action="#!">
+
+                        <p class="h4 mb-4">Contact us</p>
+
+                        <!-- Name -->
+                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+                        <!-- Email -->
+                        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+                        <!-- Subject -->
+                        <label>Subject</label>
+                        <select class="browser-default custom-select mb-4">
+                           <option value="" disabled>Choose option</option>
+                           <option value="1" selected>Feedback</option>
+                           <option value="2">Report a bug</option>
+                           <option value="3">Feature request</option>
+                           <option value="4">Feature request</option>
+                        </select>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                           <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+                        </div>
+
+                        <!-- Copy -->
+                        <div class="custom-control custom-checkbox mb-4">
+                           <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                           <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+                        </div>
+
+                        <!-- Send button -->
+                        <button class="btn btn-info btn-block" type="submit">Send</button>
+
+                     </form>
+                     <!-- Default form contact -->
                   </div>
                </div>
             </div>
@@ -244,9 +286,8 @@
 
          <!-- left content-->
          <div class="col-lg-4">
-            <div class="row left-content">
-               <!-- facebook page -->
-               <div class="fb-page col-lg-12 col-md-6 ">
+            <div class="left-main-content">
+               <div class="left-content-item ">
                   <div class="category">
                      <div class="news-box-header">
                         <a href="">
@@ -257,15 +298,11 @@
                      </div>
                   </div>
                   <hr>
-                  <iframe style="margin-top: 20px;"
-                     src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSecrets-Of-Hearts-Emm-1159609230835927%2F&tabs&width=340&height=213&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId"
-                     width="100%" height="213" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                  <iframe class="pt-3"
+                     src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSecrets-Of-Hearts-Emm-1159609230835927%2F&tabs&width=340&height=213&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                     width="340" height="213" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                      allowTransparency="true" allow="encrypted-media"></iframe>
-               </div>
-
-               <!-- social media -->
-               <div class="social-header col-lg-12 col-md-6">
-                  <div class="category">
+                  <div class="category pt-2">
                      <div class="news-box-header">
                         <a href="">
                            <h3 class="head-title">
@@ -285,53 +322,55 @@
                         Github</button>
                   </div>
                </div>
-
-            </div>
-            <!-- most read -->
-            <div id="most-read" class="detail-most-read col-lg-12 col-md-12">
-               <div class="category  ">
-
-                  <div class="news-most">
-                     <div class="category">
-                        <div class="news-box-header">
-                           <a href="">
-                              <h3 class="head-title">
-                                 <span>Recent Posts</span>
-                              </h3>
-                           </a>
-                        </div>
-                     </div>
-                     <hr>
-                     <div class="row pt-3">
-                        <div class="col-lg-12">
-                           <a class="most-item img-hover-zoom">
-                              <img src="../img/world1.jpg" alt="">
-                              <p class="most-title">Thailand had the best weather in the last hundred years</p>
-                           </a>
-                        </div>
-                        <div class="col-lg-12">
-                           <a class="most-item img-hover-zoom">
-                              <img src="../img/tech4.jpg" alt="">
-                              <p class="most-title">Canada airlines will travel for the longest trip in the history of
-                                 flight</p>
-                           </a>
-                        </div>
-                        <div class="col-lg-12">
-                           <a class="most-item img-hover-zoom">
-                              <img src="../img/world5.jpg" alt="">
-                              <p class="most-title">Two boys play with water after a rainy day in New York city</p>
-                           </a>
-                        </div>
-                        <div class="col-lg-12">
-                           <a class="most-item img-hover-zoom">
-                              <img src="../img/sport3.jpg" alt="">
-                              <p class="most-title">Hiking is the most popular sport played by American teenagers</p>
-                           </a>
+               <div id="most-read" class="left-content-item">
+                  <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+                     <div class="category  ">
+                        <div class="news-most">
+                           <div class="category">
+                              <div class="news-box-header">
+                                 <a href="">
+                                    <h3 class="head-title">
+                                       <span>Recent Posts</span>
+                                    </h3>
+                                 </a>
+                              </div>
+                           </div>
+                           <hr>
+                           <div class="row pt-3">
+                              <div class="col-lg-12">
+                                 <a class="most-item img-hover-zoom">
+                                    <img src="../img/world1.jpg" alt="">
+                                    <p class="most-title">Thailand had the best weather in the last hundred years</p>
+                                 </a>
+                              </div>
+                              <div class="col-lg-12">
+                                 <a class="most-item img-hover-zoom">
+                                    <img src="../img/tech4.jpg" alt="">
+                                    <p class="most-title">Canada airlines will travel for the longest trip in the
+                                       history of flight</p>
+                                 </a>
+                              </div>
+                              <div class="col-lg-12">
+                                 <a class="most-item img-hover-zoom">
+                                    <img src="../img/world5.jpg" alt="">
+                                    <p class="most-title">Two boys play with water after a rainy day in New York city
+                                    </p>
+                                 </a>
+                              </div>
+                              <div class="col-lg-12">
+                                 <a class="most-item img-hover-zoom">
+                                    <img src="../img/sport3.jpg" alt="">
+                                    <p class="most-title">Hiking is the most popular sport played by American teenagers
+                                    </p>
+                                 </a>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
+            <!-- left content-->
          </div>
          <!-- left content-->
       </div>   
