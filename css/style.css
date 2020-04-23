@@ -138,6 +138,9 @@ hr{
 .img-hover-zoom:hover h3.box-content-title a{
     color:rgb(61, 148, 151);
 }
+.list-item{
+    padding: 15px;
+}
 .list-item .item{
    margin-bottom: 10px;
 }
@@ -162,10 +165,16 @@ hr{
 .category span.category-title{
     padding: 10px;
 }
+.content-item{
+    padding: 0 15px;
+}
+.breadcrumb{
+    margin: 0;
+}
 /* end content */
 /* most news */
 .news-most{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .most-item{
     width: 100%;
@@ -176,13 +185,14 @@ hr{
     overflow: hidden;
     margin-bottom: 10px;
     flex-wrap: wrap;
+   
 }
 a.most-item{
     margin: 0;
 }
 .most-item > img{
     width: 30%;
-    height: 70px;
+    height: 90px;
 }
 .most-item > p{
     width: 65%;
@@ -282,12 +292,16 @@ iframe{
         display: none;
     }
     .category{
-        padding: 20px;
+        padding: 0 20px;
+    }
+    .top{
+        padding-top: 10px;
     }
     .col-6{
         width: 100%;
         display: block;
     }
+   
     .list-item .item .col-4{
         padding-right: 0;
         max-height: 150px;
@@ -314,9 +328,23 @@ iframe{
     }
     .social-media{
         padding: 15px;
+        margin: 0;
     }
     .detail-most-read{
         display: none;
+    }
+    .news-most{
+        margin: 0;
+    }
+    .news-box-item{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .news-most .category{
+        padding: 0;
+    }
+    .detail-content{
+        padding: 15px;
     }
  }
  @media (min-width: 576px) and (max-width: 767px) { 
@@ -324,16 +352,35 @@ iframe{
         display: none;
     }
     .list-item .item .col-4{
-        padding-right: 0;
+        /* padding-right: 0; */
         max-height: 150px;
 
     }
+  
     .footer-category,.footer-about{
         display: none;
     }
     
     .detail-most-read{
         display: none;
+    }
+    .list-item .item .col-4{
+        padding-right: 0;
+        max-height: 150px;
+
+    }
+    .list-item .item .col-8{
+        max-height: 150px;
+    }
+    .list-item .item .col-8 .news-box-desc{
+        max-height: 35px;
+        overflow: hidden;
+    }
+    .list-item .item .meta-view{
+        display: none;
+    }
+    .list-item .item .news-box-content-meta{
+        margin: 0;
     }
  }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -343,17 +390,6 @@ iframe{
     .most-item > img{
         height: 100%;
     }
-    .fb-page{
-        order:0;
-    }
-    .social-header{
-        order: 2;
-    }
-    #most-read{
-        order: 1;
-    }
-   
-
 }
 @media (min-width: 1200px) { 
 }
